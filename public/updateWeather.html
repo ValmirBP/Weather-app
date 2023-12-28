@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Weather Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Modify Weather Info</h1>
+
+    <!-- Update Weather Section -->
+    <section>
+        <h2>Update Weather</h2>
+        <form id="updateForm">
+            <label for="updateCityInput">Enter City:</label>
+            <input type="text" id="updateCityInput" placeholder="Enter city name" required>
+
+            <label for="updateConditionInput">Weather Condition:</label>
+            <input type="text" id="updateConditionInput" placeholder="Enter weather condition" required>
+
+            <label for="updateTemperatureInput">Temperature:</label>
+            <input type="text" id="updateTemperatureInput" placeholder="Enter temperature" required>
+
+            <label for="updateIconInput">Icon URL:</label>
+            <input type="text" id="updateIconInput" placeholder="Enter icon URL" required>
+
+            <button type="button" onclick="updateWeather()">Update Weather</button>
+        </form>
+    </section>
+
+    <!-- Remove City Section -->
+    <section>
+        <h2>Remove City</h2>
+        <form id="removeForm">
+            <label for="removeCityInput">Enter City:</label>
+            <input type="text" id="removeCityInput" placeholder="Enter city name to remove" required>
+
+            <button type="button" onclick="removeCity()">Remove City</button>
+        </form>
+    </section>
+
+    <script>
+        function updateWeather() {
+            const cityName = document.getElementById("updateCityInput").value;
+            const condition = document.getElementById("updateConditionInput").value;
+            const temperature = document.getElementById("updateTemperatureInput").value;
+            const icon = document.getElementById("updateIconInput").value;
+
+            // You can implement the logic to update weather information in the database
+            // For simplicity, let's assume we have a function updateWeatherInfo(cityName, condition, temperature, icon)
+            // updateWeatherInfo(cityName, condition, temperature, icon);
+
+            alert(`Weather information updated for ${cityName}`);
+        }
+
+        function removeCity() {
+            const cityName = document.getElementById("removeCityInput").value;
+
+            // You can implement the logic to remove the city from the database
+            // For simplicity, let's assume we have a function removeCityFromDatabase(cityName)
+            // removeCityFromDatabase(cityName);
+
+            alert(`${cityName} removed from the database`);
+        }
+    </script>
+
+</body>
+</html>
