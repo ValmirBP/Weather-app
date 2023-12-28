@@ -1,6 +1,6 @@
 # Weather Application using Node.js
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://github.com/ValmirBP/weatherapp/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ValmirBP/Weather-app/blob/main/LICENSE)
 
 Welcome to my Node.js Weather Application! This repository contains the source code and resources for our exciting weather application, which was built using Node.js.
 
